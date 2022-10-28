@@ -11,13 +11,14 @@ body{
 }
 
 /* media queries */
-@media screen and (max-width: 400px){
+@media screen and (max-width: 600px){
 	.navbar{
 		flex-direction: column;
 	}
-}
-
-@media screen and (max-width: 600px){
+	
+	.project-container{
+		flex-direction: column;
+	}
 	#profile-section{
 		flex-direction: column;
 	}
@@ -96,6 +97,7 @@ a:hover{
 }
 
 main > section{
+	padding-block: 5rem;
 	min-height: 80vh;
 }
 
@@ -154,6 +156,7 @@ main > section{
 }
 
 #footer{
+	padding: 2em;
 	text-align: center;
 	font-size: 15px;
 	background-color:grey;
