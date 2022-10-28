@@ -1,17 +1,31 @@
-@media screen and (max-width: 700px){
-        .navbar{
-	   font-size: 10px;
-           flex-direction: column;
-        }
+/* general reset */
+*{
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+}
+
+body{
+	margin: 0;
+	padding: 0;
+	font-family: system-ui;
+}
+
+/* media queries */
+@media screen and (max-width: 400px){
+	.navbar{
+		flex-direction: column;
+	}
 }
 
 @media screen and (max-width: 600px){
 	#profile-section{
 		flex-direction: column;
 	}
+
 	#status{
 		flex-direction: column;
 	}
+	
 	.container{
 		flex-direction: column;
 		height: 100px;
@@ -25,97 +39,29 @@
 		line-height: 30px;
 		height: auto;
 	}
+	
 	.navbar a:hover{
 		padding: 15px;
 	}
+	
 	#footer{
 		flex-direction: flex-end;
 	}
 }
 
-*{
-	scroll-behavior: smooth;
-}
-
-.top-lang{
-	height: 200px;
-	width: 300px;
-	display:block;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-#judul{
-	color: white;
-	font-weight: bold;
-}
-body{
-	margin: 0;
-}
-
-#subjudul{
-	color: white;
-}
-
-.list-card{
-	height: 200px;
-	background-color: cyan;
-	box-shadow: 3px 4px black;
-}
-
-.container{
-	float: center;
-	display: flex;
-	justify-content: center;
-}
-
-.github-project{
-	height: 200px;
-	background-color: gold;
-	box-shadow: 3px 4px black;
-}
-
-#profile-section{
-	padding: 20px;
-	text-align: center;
-	height: auto;
-	width: auto;
-	background-color: black;
-}
-.navbar li{
-	display: inline;
-}
-
-.social-media img{
-	height: 50px;
-	width: 50px;
-}
-
-.project-list{
-	height: 200px;
-	background-color: grey;
-	box-shadow: 2px 4px black;
-}
-
+/* navbar */
 nav.navbar{
 	height: auto;
 	background-color: darkgreen;
-	text-align: right;
-	padding:10px;
+	padding: 10px;
 	position: sticky;
+	top: 0;
+	
 	display: flex;
-	top:0;
+	justify-content: space-between;
 	align-items: center;
 }
-#project-section{
-	height: 750px;
-	background-color: white;
-}
 
-#profile-image{
-	width: 250px;
-	height: 100px;
-}
 .navbar a{
 	padding: 14px 10px;
 	color: white;
@@ -128,14 +74,83 @@ nav.navbar{
 	top: 0;
 	padding: 13px;
 }
+
+.navbar li{
+	display: inline;
+}
+
 .navbar p{
-	float: left;
-	font-weight: bold;
 	background-color: white;
 	padding: 10px;
-	top: 0;
+	font-weight: bold;
 	box-shadow: 4px 5px black;
+}
+
+a:link{
+	color: #ddd;
+	text-decoration: none;
+}
+
+a:hover{
+	text-decoration: underline;
+}
+
+main > section{
+	min-height: 80vh;
+}
+
+.top-lang{
+	height: 200px;
+	width: 300px;
 	display: block;
+	margin-inline: auto;
+}
+
+#hero{
+	color: white;
+	font-weight: bold;
+}
+
+#hero ~ p{
+	color: white;
+}
+
+.project-container{
+	display: flex;
+	justify-content: center;
+	gap: 1em;
+}
+
+.project-container > ul{
+	list-style: none;
+	background: #222;
+	padding: 1rem;
+	color: #ddd;
+	box-shadow: 3px 4px black;
+}
+
+#profile-section{
+	text-align: center;
+	background-color: black;
+}
+
+.social-media img{
+	height: 50px;
+	width: 50px;
+}
+
+#project-section{
+	height: 750px;
+	background-color: white;
+}
+
+#project-section h2{
+	text-align: center;
+}
+
+#profile-image{
+	width: 250px;
+	height: 100px;
 }
 
 #footer{
