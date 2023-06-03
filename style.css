@@ -55,7 +55,7 @@ a:hover {
 }
 
 main > section {
-  padding-block: 5rem;
+  padding: 5rem 2rem;
   min-height: 80vh;
 }
 
@@ -66,11 +66,6 @@ main > section {
 
 #hero ~ p {
   color: white;
-}
-.desc {
-  text-align: center;
-  font-weight: 600;
-  font-size: 22px;
 }
 
 #profile-section {
@@ -105,18 +100,19 @@ main > section {
 }
 
 .slide-container {
-  max-width: 1200px;
+  max-width: 75ch;
   position: relative;
   margin: auto;
   overflow: hidden;
 }
 
 .number {
+  background-color: #444444bb;
   color: #f2f2f2;
-  font-size: 12px;
+  font-size: 1.2rem;
   padding: 8px 12px;
   position: absolute;
-  top: 0;
+  bottom: 0;
 }
 
 .capt {
@@ -143,7 +139,7 @@ main > section {
   text-align: center;
 }
 
-.lanjut {
+.slide-button {
   cursor: pointer;
   position: absolute;
   top: 50%;
@@ -156,22 +152,14 @@ main > section {
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
   user-select: none;
+}
+
+.lanjut {
   right: 0;
 }
 
 .sebelum {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  padding: 16px;
-  margin-top: -22px;
-  color: black;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
+  left: 0;
 }
 
 .project-slide {
@@ -179,7 +167,9 @@ main > section {
 }
 
 .project-slide img {
-  vertical-align: middle;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 #footer {
