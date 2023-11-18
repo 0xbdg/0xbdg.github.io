@@ -1,0 +1,119 @@
+*{
+  box-sizing: border-box;
+}
+
+body {
+  margin:0;
+  padding:0;
+}
+
+@media screen and (max-width: 430px){
+  .hero-content .hero-profile{
+    display: none;
+  }
+  .hero-content{
+    text-align: center;
+    align-items: center;
+  }
+}
+
+#hero-section{
+  background-image: url("img/scanlines.png");
+  background-color: #004d00;
+  padding: 50px;
+  min-height: 100vh;
+}
+
+.hero-content {
+  font-size: 24px;
+  font-family:VT323;
+  color: rgb(93,253,0);
+  text-shadow: 1px 1px 2px rgb(150, 167, 124);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero-content .hero-profile{
+  font-size: 16px;
+  justify-content: space-between;
+}
+
+#about-section{
+  background-image: url("img/scanlines.png");
+  background-color: #800000;
+  min-height: 100vh;
+  padding: 5rem 2rem;
+  font-size: 22px;
+  color: #999966;
+  font-family: VT323;
+  font-weight: 600;
+}
+
+.about-title{
+  text-align: center;
+  text-decoration: underline;
+}
+
+#project-section{
+  background-color: #001a66;
+  background-image: url("img/scanlines.png");
+  min-height: 100vh;
+  padding: 5rem 2rem;
+  color: #ccccb3;
+  font-family: VT323;
+}
+
+.p{
+  font-size: 22px;
+}
+
+.project-title {
+  text-align: center;
+  text-decoration: underline;
+}
+
+#contactme-section{
+  background-image: url("img/scanlines.png");
+  min-height: 100vh;
+  padding: 5rem 2rem;
+  background-color: #8c9966;
+  font-family: VT323;
+}
+
+.contact-title{
+  color: #cccc00;
+  text-align: center;
+  text-decoration: underline;
+}
+
+form {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+input[type=text], textarea{
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
