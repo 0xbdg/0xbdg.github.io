@@ -73,6 +73,53 @@ body {
   text-decoration: underline;
 }
 
+.row-list{
+  margin: 8px -16px;
+  display: flex;
+}
+
+.row-list
+.row-list > .column{
+  padding: 8px;
+}
+
+.row-list:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.show{
+  display: block;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  display: none;
+}
+
+.content img{
+  width: 100%;
+}
+
+.btn-fill {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.btn-fill:hover {
+  background-color: #ddd;
+}
+
+.btn-fill.active {
+  background-color: #666;
+  color: white;
+}
+
 #contactme-section{
   background-image: url("img/scanlines.png");
   min-height: 100vh;
@@ -116,4 +163,3 @@ input[type=submit] {
 input[type=submit]:hover {
   background-color: #45a049;
 }
-
