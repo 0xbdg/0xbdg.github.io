@@ -13,7 +13,7 @@ body {
   to {opacity: 1}
 }
 
-@media screen and (max-width: 518px){
+@media screen and (max-width: 606px){
   .hero-content .hero-profile{
     display: none;
   }
