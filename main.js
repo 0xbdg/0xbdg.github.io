@@ -1,42 +1,85 @@
-selected("semua");
-function selected(get){
-  let col = document.getElementsByClassName("column");
-
-  if (get == "semua") get="";
-  for (let i = 0; i < col.length;i++){
-    hide(col[i], "show");
-    if (col[i].className.indexOf(get) > -1) add(col[i], "show");
+filterSelection("all") 
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("column");
+  if (c == "all") c = "";
+  
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
   }
 }
 
-function add(items, name){
-  let arr1, arr2;
-  arr1 = items.className.split(" ");
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
   arr2 = name.split(" ");
-  for (let i = 0; i < arr2.length; i++) {
-    if (arr1.indexOf(arr2[i]) == -1) {items.className += " " + arr2[i];}
-  }
-}
-
-function hide(items, name){
-  let arr1, arr2;
-  arr1 = items.className.split(" ");
-  arr2 = name.split(" ");
-  for (let i = 0; i < arr2.length; i++) {
-    while (arr1.indexOf(arr2[i]) > -1) {
-      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {
+      element.className += " " + arr2[i];
     }
   }
-  items.className = arr1.join(" ");
 }
 
-let buttonFilter = document.getElementById("button-filter");
-let btnFill = buttonFilter.getElementsByClassName("btn-fill");
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);
+    }
+  }
+  element.className = arr1.join(" ");
+}
 
-for (let len = 0; len < btnFill.length; len++){
-  btnFill[len].addEventListener("click",function(){
-    let aktif = document.getElementsByClassName("active");
-    aktif[0].className = aktif[0].className.replace(" active","");
-    this.className = " active";
+var btnContainer = document.getElementById("button_filter");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
   });
+}
+
+function dropdown() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+
+let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("cert");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slides[slideIndex-1].style.display = "block";
 }

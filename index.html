@@ -16,6 +16,14 @@
           <div class="container">
             <h1 class="hero-title">Hi, i'am 0xbdg</h1>
             <p>I'am ordinary people who interested in Malware Development,<br>and Reverse Engineering.</p>
+            <div class="dropdown">
+              <button onclick="dropdown()" class="dropbtn">Social Media</button>
+              <div id="myDropdown" class="dropdown-content">
+                <a href="https://github.com/0xbdg" target="_blank">Github</a>
+                <a href="#" target="_blank">Youtube</a>
+                <a href="#">Discord</a>
+              </div>
+            </div>
           </div>
           <pre class="hero-profile">
                  999999                 
@@ -44,7 +52,7 @@
         </div>
       </section>
       <section id="about-section">
-        <h2 class="about-title">About Me</h2>
+        <h2 class="section-title">About Me</h2>
         <div class="about-desc">
          <p>Hi guys, this is the portfolio website I created. I've been interested in coding since I was 14 years old, and I have a passion for playing chess (just for fun). I enjoy creating things that I like, such as building websites (just for fun), exploring malware (although I'm still not very skilled at it), and developing desktop applications. The programming languages I enjoy using are C# and C, but I have also studied various programming languages such as Python, Java, Golang, Rust, and Ruby.</p>
 					<p>My ultimate goal is to become a malware analyst because I have a strong interest in this profession. Although this profession is rare in my country, I also aspire to become a malware developer because I find the process of creating malware intriguing. I understand that I still have a lot to learn in this field, but I am determined to continue developing my skills in malware analysis and development.</p>
@@ -52,45 +60,104 @@
       </section>
       <section id="project-section">
         <div class="p">
-          <h2 class="project-title">My Project</h2>
+          <h2 class="section-title">My Project</h2>
         </div>
-        <div id="button-filter">
-          <button class="btn-fill active" onclick="selected('semua')">All</button>
-          <button class="btn-fill" onclick="selected('malware')">Malware</button>
-          <button class="btn-fill" onclick="selected('website')">Website</button>
-          <button class="btn-fill" onclick="selected('hardware')">Hardware/Arduino</button>
-          <button class="btn-fill" onclick="selected('other')">Other</button>
+        <div id="button_filter">
+          <button class="btn active" onclick="filterSelection('all')"> All</button>
+          <button class="btn" onclick="filterSelection('malware')"> Malware</button>
+          <button class="btn" onclick="filterSelection('website')"> Website</button>
+          <button class="btn" onclick="filterSelection('other')"> Other</button>
         </div>
-        <div class="row-list">
+        
+        <div class="row">
           <div class="column malware">
             <div class="content">
-              <img src="" alt="">
-              <h4></h4>
+              <img src="/w3images/mountains.jpg" alt="Malware" style="width:100%">
+              <h4>Mountains</h4>
+            </div>
+          </div>
+          <div class="column malware">
+            <div class="content">
+              <img src="/w3images/lights.jpg" alt="Malware" style="width:100%">
+              <h4>Lights</h4>
+            </div>
+          </div>
+          <div class="column malware">
+            <div class="content">
+              <img src="/w3images/nature.jpg" alt="Malware" style="width:100%">
+              <h4>Forest</h4>
+            </div>
+          </div>
+        
+          <div class="column website">
+            <div class="content">
+              <img src="/w3images/cars1.jpg" alt="Website" style="width:100%">
+              <h4>Retro</h4>
             </div>
           </div>
           <div class="column website">
             <div class="content">
-              <img src="" alt="">
-              <h4></h4>
+              <img src="/w3images/cars2.jpg" alt="Website" style="width:100%">
+              <h4>Fast</h4>
             </div>
           </div>
-          <div class="column hardware">
+          <div class="column website">
             <div class="content">
-              <img src="" alt="">
-              <h4></h4>
+              <img src="/w3images/cars3.jpg" alt="Website" style="width:100%">
+              <h4>Classic</h4>
+            </div>
+          </div>
+        
+          <div class="column other">
+            <div class="content">
+              <img src="/w3images/people1.jpg" alt="Other" style="width:100%">
+              <h4>Girl</h4>
             </div>
           </div>
           <div class="column other">
             <div class="content">
-              <img src="" alt="">
-              <h4></h4>
+              <img src="/w3images/people2.jpg" alt="Other" style="width:100%">
+              <h4>Man</h4>
+            </div>
+          </div>
+          <div class="column other">
+            <div class="content">
+              <img src="/w3images/people3.jpg" alt="Other" style="width:100%">
+              <h4>Woman</h4>
             </div>
           </div>
         </div>
       </section>
+      <section id="certificate-section">
+        <div class="p">
+          <h2 class="section-title">Certificates</h2>
+        </div>
+
+        <div class="certificate-container">
+          <div class="cert fade">
+            <div class="numbertext">1 / 3</div>
+            <img src="https://picsum.photos/100" alt="kont">
+            <div class="text">Caption Text</div>
+          </div>
+        
+          <div class="cert fade">
+            <div class="numbertext">2 / 3</div>
+            <img src="https://picsum.photos/100" alt="kont">
+            <div class="text">Caption Two</div>
+          </div>
+        
+          <div class="cert fade">
+            <div class="numbertext">3 / 3</div>
+            <img src="https://picsum.photos/100" alt="kont">
+            <div class="text">Caption Three</div>
+          </div>
+          <a class="sebelum" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="lanjut" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+      </section>
       <section id="contactme-section">
         <div class="p">
-          <h2 class="contact-title">Contact Me</h2>
+          <h2 class="section-title" style="color: yellowgreen">Contact Me</h2>
         </div>
         <form>
           <label for="fname">From email</label>
