@@ -1,9 +1,9 @@
 <?php
-$to = "somebody@example.com";
-$subject = "My subject";
-$txt = "Hello world!";
-$headers = "From: webmaster@example.com" . "\r\n" .
-"CC: somebodyelse@example.com";
+$to = "example@mail.com";
+$subject = $_POST["subject"];
+$txt = $_POST["message"];
+$headers = "From: ".$_POST["email"] . "\r\n" .
+"CC: ".$_POST["name"];
 
 mail($to,$subject,$txt,$headers);
 ?>
