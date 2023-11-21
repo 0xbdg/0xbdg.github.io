@@ -5,6 +5,7 @@
 body {
   margin:0;
   padding:0;
+  font-family: VT323;
 }
 
 @keyframes fade {
@@ -32,7 +33,6 @@ body {
 
 .hero-content {
   font-size: 24px;
-  font-family:VT323;
   color: rgb(93,253,0);
   text-shadow: 1px 1px 2px rgb(150, 167, 124);
   display: flex;
@@ -91,7 +91,6 @@ body {
   padding: 5rem 2rem;
   font-size: 22px;
   color: #999966;
-  font-family: VT323;
   font-weight: 600;
 }
 
@@ -106,7 +105,6 @@ body {
   min-height: 100vh;
   padding: 5rem 2rem;
   color: #ccccb3;
-  font-family: VT323;
 }
 
 .p{
@@ -117,38 +115,32 @@ body {
   margin: 8px -16px;
 }
 
-/* Add padding BETWEEN each column (if you want) */
 .row,
 .row > .column {
   padding: 8px;
 }
 
-/* Create three equal columns that floats next to each other */
 .column {
   float: left;
   width: 33.33%;
-  display: none; /* Hide columns by default */
+  display: none; 
 }
 
-/* Clear floats after rows */
 .row:after {
   content: "";
   display: table;
   clear: both;
 }
 
-/* Content */
 .content {
   background-color: white;
   padding: 10px;
 }
 
-/* The "show" class is added to the filtered elements */
 .show {
   display: block;
 }
 
-/* Style the buttons */
 .btn {
   border: none;
   outline: none;
@@ -157,12 +149,10 @@ body {
   cursor: pointer;
 }
 
-/* Add a grey background color on mouse-over */
 .btn:hover {
   background-color: #ddd;
 }
 
-/* Add a dark background color to the active button */
 .btn.active {
   background-color: #666;
   color: white;
@@ -209,7 +199,6 @@ body {
   border-radius: 3px 0 0 3px;
 }
 
-/* On hover, add a black background color with a little bit see-through */
 .sebelum:hover, .lanjut:hover {
   background-color: rgba(0,0,0,0.8);
 }
@@ -219,7 +208,6 @@ body {
   animation-duration: 1.5s;
 }
 
-/* Caption text */
 .text {
   color: black;
   font-size: 15px;
@@ -230,7 +218,6 @@ body {
   text-align: center;
 }
 
-/* Number text (1/3 etc) */
 .numbertext {
   color: black;
   font-size: 12px;
@@ -244,7 +231,6 @@ body {
   min-height: 100vh;
   padding: 5rem 2rem;
   background-color: #8c9966;
-  font-family: VT323;
 }
 
 .contact-title{
@@ -259,7 +245,7 @@ form {
   padding: 20px;
 }
 
-input[type=email], textarea{
+input[type=email],input[type=text], textarea{
   width: 100%;
   padding: 12px;
   border: 1px solid #ccc;

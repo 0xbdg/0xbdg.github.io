@@ -19,7 +19,7 @@
             <div class="dropdown">
               <button onclick="dropdown()" class="dropbtn">Social Media</button>
               <div id="myDropdown" class="dropdown-content">
-                <a href="https://github.com/0xbdg" target="_blank">Github</a>
+                <a href="https://github.com/0xbdg" target="_blank"><i class="fa fa-github" color="black" aria-hidden="true"></i>Github</a>
                 <a href="#" target="_blank">Youtube</a>
                 <a href="#">Discord</a>
               </div>
@@ -159,15 +159,18 @@
         <div class="p">
           <h2 class="section-title" style="color: yellowgreen">Contact Me</h2>
         </div>
-        <form>
-          <label for="fromemail">From email</label>
-          <input type="email" name="mail1" placeholder="Your Email">
+        <form action="index.php" method="post">
+          <label for="name">Name</label>
+          <input type="text" name="name" placeholder="Your name">
 
-          <label for="toemail">To email</label>
-          <input type="email" name="mail2" placeholder="Send To">
+          <label for="email">Email</label>
+          <input type="email" name="email" placeholder="Your Email">
 
           <label for="subject">Subject</label>
-          <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+          <input type="text" name="subject" placeholder="Your subject">
+
+          <label for="message">Message</label>
+          <textarea name="message" placeholder="Write something.." style="height:200px"></textarea>
 
           <input type="submit" value="Submit">
         </form>
