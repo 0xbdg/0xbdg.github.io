@@ -22,6 +22,10 @@ body {
     align-items: center;
     font-size: 32px;
   }
+
+  #hero-section{
+    padding: 5rem 2rem;
+  }
 }
 
 #hero-section{
