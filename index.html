@@ -5,189 +5,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
   </head>
   <body>
-    <main>
-      <section id="hero-section">
-        <div class="hero-content">
-          <div class="container">
-            <h1 class="hero-title">Hi, i'am 0xbdg</h1>
-            <p>I'am ordinary people who interested in Malware Development,<br>and Reverse Engineering.</p>
-            <div class="dropdown">
-              <button onclick="dropdown()" class="dropbtn">Social Media</button>
-              <div id="myDropdown" class="dropdown-content">
-                <a href="https://github.com/0xbdg" target="_blank"><i class="fa fa-github" color="black" aria-hidden="true"></i>Github</a>
-                <a href="#" target="_blank">Youtube</a>
-                <a href="#">Discord</a>
-              </div>
-            </div>
-          </div>
-          <pre class="hero-profile">
-                 999999                 
-             99999999999998             
-            9999999999999999            
-           9999  99999999999            
-           99      9999999999           
-           99             999           
-           99              9            
-          99              9 9           
-           9               99           
-            9              9            
-             9            9             
-              99        99              
-                99    99                
-           99             999           
-         999999          999999         
-      9999999999       99999999999      
-   999999999999999   999999999999999    
-   9999999999999999999999999999999999   
-  999999999999999999999999999999999999  
-  999999999999999999999999999999999999  
-  999999999999999999999999999999999999  
-      999999999999999999999999999 
-          </pre>                                                
+    <div id="screen">
+      <img src="img/bezel.png" alt="" id="bezel">
+      <div class="contents">
+        <h3>root@0xbdg:~# cat info.txt</h3>
+        <div>
+          <h3>0xbdg - Github Profile</h3>
+          <p>Information Technology enthusiast</p>
+          <p>Loves Malware Analyst and Reverse Engineering</p>
+          <ul>
+            <li>🌍 I'm based in ****</li>
+            <li>🖥️ See my portfolio at http://example.com</li>
+            <li>✉️ You can contact me at 0xbdg@proton.me</li>
+            <li>🚀 I'm currently working on None</li>
+            <li>🧠 I'm learning rust and golang for malware</li>
+            <li>🤝 I'm open to collaborating on Hidden Tear Ransomware</li>
+            <li>⚡ interest in malware development</li>
+          </ul>
+          <h3>root@0xbdg:~# _</h3>
         </div>
-      </section>
-      <section id="about-section">
-        <h2 class="section-title">About Me</h2>
-        <div class="about-desc">
-         <p>Hi guys, this is the portfolio website I created. I've been interested in coding since I was 14 years old, and I have a passion for playing chess (just for fun). I enjoy creating things that I like, such as building websites (just for fun), exploring malware (although I'm still not very skilled at it), and developing desktop applications. The programming languages I enjoy using are C# and C, but I have also studied various programming languages such as Python, Java, Golang, Rust, and Ruby.</p>
-					<p>My ultimate goal is to become a malware analyst because I have a strong interest in this profession. Although this profession is rare in my country, I also aspire to become a malware developer because I find the process of creating malware intriguing. I understand that I still have a lot to learn in this field, but I am determined to continue developing my skills in malware analysis and development.</p>
-        </div>
-      </section>
-      <section id="project-section">
-        <div class="p">
-          <h2 class="section-title">My Project</h2>
-        </div>
-        <div id="button_filter">
-          <button class="btn active" onclick="filterSelection('all')"> All</button>
-          <button class="btn" onclick="filterSelection('malware')"> Malware</button>
-          <button class="btn" onclick="filterSelection('website')"> Website</button>
-          <button class="btn" onclick="filterSelection('other')"> Other</button>
-        </div>
-        
-        <div class="row">
-          <div class="column malware">
-            <div class="content">
-              <img src="img/project1.png" alt="Malware">
-              <h4>BDG-CustomMadeRansomware</h4>
-            </div>
-          </div>
-          <div class="column malware">
-            <div class="content">
-              <img src="img/project2.png" alt="Malware">
-              <h4>ZagreuS Clone</h4>
-            </div>
-          </div>
-          <div class="column malware">
-            <div class="content">
-              <img src="img/project3.png" alt="Malware">
-              <h4>NoCry Builder</h4>
-            </div>
-          </div>
-          <div class="column malware">
-            <div class="content">
-              <img src="img/project6.png" alt="Malware">
-              <h4>Malicious LNK Builder</h4>
-            </div>
-          </div>
-          <div class="column malware">
-            <div class="content">
-              <img src="img/project7.png" alt="Malware">
-              <h4>WannaCry Ransomware .NET</h4>
-            </div>
-          </div>
-          <div class="column website">
-            <div class="content">
-              <img src="img/project4.png" alt="Website">
-              <h4>ITEC-OS web page</h4>
-            </div>
-          </div>
-          <div class="column website">
-            <div class="content">
-              <img src="img/project5.png" alt="Website">
-              <h4>Ransom Web</h4>
-            </div>
-          </div>
-          <div class="column website">
-            <div class="content">
-              <img src="https://picsum.photos/100" alt="Website">
-              <h4>ko</h4>
-            </div>
-          </div>
-        
-          <div class="column other">
-            <div class="content">
-              <img src="https://picsum.photos/100" alt="Other">
-              <h4>Girl</h4>
-            </div>
-          </div>
-          <div class="column other">
-            <div class="content">
-              <img src="https://picsum.photos/100" alt="Other">
-              <h4>Man</h4>
-            </div>
-          </div>
-          <div class="column other">
-            <div class="content">
-              <img src="https://picsum.photos/100" alt="Other">
-              <h4>Woman</h4>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section id="certificate-section">
-        <div class="p">
-          <h2 class="section-title">Certificates</h2>
-        </div>
-
-        <div class="certificate-container">
-          <div class="cert fade">
-            <div class="numbertext">1 / 3</div>
-            <img src="img/cert1.png" alt="kont">
-            <div class="text">HackToday 2023</div>
-          </div>
-        
-          <div class="cert fade">
-            <div class="numbertext">2 / 3</div>
-            <img src="https://picsum.photos/100" alt="kont">
-            <div class="text">Caption Two</div>
-          </div>
-        
-          <div class="cert fade">
-            <div class="numbertext">3 / 3</div>
-            <img src="https://picsum.photos/100" alt="kont">
-            <div class="text">Caption Three</div>
-          </div>
-          <a class="sebelum" onclick="plusSlides(-1)">&#10094;</a>
-          <a class="lanjut" onclick="plusSlides(1)">&#10095;</a>
-        </div>
-      </section>
-      <section id="contactme-section">
-        <div class="p">
-          <h2 class="section-title" style="color: yellowgreen">Contact Me</h2>
-        </div>
-        <form action="index.php" method="post">
-          <label for="name">Name</label>
-          <input type="text" name="name" placeholder="Your name">
-
-          <label for="email">Email</label>
-          <input type="email" name="email" placeholder="Your Email">
-
-          <label for="subject">Subject</label>
-          <input type="text" name="subject" placeholder="Your subject">
-
-          <label for="message">Message</label>
-          <textarea name="message" placeholder="Write something.." style="height:200px"></textarea>
-
-          <input type="submit" value="Submit">
-        </form>
-      </section>
-    </main>
-    <footer id="foo"></footer>
+      </div>
+    </div>
     <script src="main.js"></script>
   </body>
 </html>
