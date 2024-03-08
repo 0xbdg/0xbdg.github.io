@@ -1,3 +1,0 @@
-# portofolio
-
-portofolio pertama btw
